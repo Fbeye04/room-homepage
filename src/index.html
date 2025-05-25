@@ -38,7 +38,7 @@
           <img class="w-5" src="./images/icon-close.svg" alt="close icon" />
         </button>
 
-        <ul class="flex gap-7 font-bold text-xl lowercase">
+        <ul class="flex gap-5 font-bold text-xl lowercase">
           <li>
             <a href="#" class="relative group"
               >Home
@@ -99,8 +99,6 @@
                   src="./images/mobile-image-hero-2.jpg"
                   alt="hero image 2"
                   class="w-full h-full object-cover" />
-                <!-- We are available all across the globe -->
-                <!-- With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don'thesitate to contact us today. -->
               </picture>
             </li>
             <li class="min-w-full">
@@ -112,8 +110,6 @@
                   src="./images/mobile-image-hero-3.jpg"
                   alt="hero image 3"
                   class="w-full h-full object-cover" />
-                <!-- Manufactured with the best materials -->
-                <!-- Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office -->
               </picture>
             </li>
           </ul>
@@ -133,9 +129,11 @@
         </div>
 
         <!-- hero description -->
-        <div>
-          <h1>Discover innovative ways to decorate</h1>
-          <p>
+        <div id="hero-description" class="px-9 py-16">
+          <h1 class="font-bold text-5xl">
+            Discover innovative ways to decorate
+          </h1>
+          <p class="text-xl text-gray-500 mt-4 mb-8">
             We provide unmatched quality, comfort, and style for property owners
             across the country. Our experts combine form and function in
             bringing your vision to life. Create a room in your own style with
@@ -143,9 +141,16 @@
             you love.
           </p>
 
-          <div>
-            <a href="#">SHOP NOW</a>
-            <img src="./images/icon-arrow.svg" alt="arrow icon" />
+          <div class="group flex items-center space-x-4 cursor-pointer">
+            <a
+              href="#"
+              class="uppercase text-xl tracking-[0.5em] font-medium group-hover:text-gray-500 transition-colors"
+              >SHOP NOW</a
+            >
+            <img
+              src="./images/icon-arrow.svg"
+              class="transition-transform group-hover:translate-x-2"
+              alt="arrow icon" />
           </div>
         </div>
       </section>
@@ -153,14 +158,19 @@
       <!-- product section -->
       <section>
         <!-- about image dark -->
-        <div>
-          <img src="./images/image-about-dark.jpg" alt="about image" />
+        <div class="w-full">
+          <img
+            class="w-full"
+            src="./images/image-about-dark.jpg"
+            alt="about image" />
         </div>
 
         <!-- about description -->
-        <div>
-          <h2>ABOUT OUR FURNITURE</h2>
-          <p>
+        <div class="px-9 py-16">
+          <h2 class="font-bold text-xl tracking-[0.4em]">
+            ABOUT OUR FURNITURE
+          </h2>
+          <p class="text-xl text-gray-500 mt-4 mb-8">
             Our multifunctional collection blends design and function to suit
             your individual taste. Make each room unique, or pick a cohesive
             theme that best express your interests and what inspires you. Find
@@ -171,14 +181,17 @@
         </div>
 
         <!-- about image light -->
-        <div>
-          <img src="./images/image-about-light.jpg" alt="about image" />
+        <div class="w-full">
+          <img
+            class="w-full"
+            src="./images/image-about-light.jpg"
+            alt="about image" />
         </div>
       </section>
     </main>
 
-    <footer>
-      <p class="text-[11px] text-center">
+    <footer class="mt-10">
+      <p class="text-lg text-center">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
