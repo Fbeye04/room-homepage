@@ -17,73 +17,80 @@
   </head>
   <body class="font-league-spartan min-h-screen">
     <header class="fixed w-full z-50">
-      <div id="title-menu" class="flex items-center px-7 py-10 w-full">
+      <div
+        id="title-menu"
+        class="flex items-center px-7 py-10 w-full lg:hidden">
         <button
           id="menu-btn"
           class="cursor-pointer transition-transform duration-200 hover:scale-110">
           <img class="w-5" src="./images/icon-hamburger.svg" alt="menu icon" />
         </button>
 
-        <div class="flex-1 flex justify-center">
+        <div class="flex-1 flex justify-center lg:justify-start">
           <img class="w-16" src="./images/logo.svg" alt="room homepage logo" />
         </div>
       </div>
 
       <nav
         id="navbar"
-        class="hidden bg-white justify-between items-center px-7 py-10">
+        class="hidden bg-white justify-between items-center px-7 py-10 lg:flex lg:px-10 lg:bg-transparent lg:justify-start lg:gap-16 lg:py-12">
         <button
           id="close-btn"
-          class="cursor-pointer transition-transform duration-200 hover:scale-110">
+          class="cursor-pointer transition-transform duration-200 hover:scale-110 lg:hidden">
           <img class="w-5" src="./images/icon-close.svg" alt="close icon" />
         </button>
 
-        <ul class="flex gap-5 font-bold text-xl lowercase">
+        <div class="hidden lg:flex lg:justify-start">
+          <img class="w-16" src="./images/logo.svg" alt="room homepage logo" />
+        </div>
+
+        <ul
+          class="flex gap-5 font-bold text-xl lowercase lg:text-white lg:font-normal">
           <li>
             <a href="#" class="relative group"
               >Home
               <span
-                class="absolute left-0 bottom-0 block h-0.5 w-full bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span
+                class="absolute left-0 bottom-0 block h-0.5 w-full bg-black lg:bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span
             ></a>
           </li>
           <li>
             <a href="#" class="relative group"
               >Shop
               <span
-                class="absolute left-0 bottom-0 block h-0.5 w-full bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span
+                class="absolute left-0 bottom-0 block h-0.5 w-full bg-black lg:bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span
             ></a>
           </li>
           <li>
             <a href="#" class="relative group"
               >About
               <span
-                class="absolute left-0 bottom-0 block h-0.5 w-full bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span
+                class="absolute left-0 bottom-0 block h-0.5 w-full bg-black lg:bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span
             ></a>
           </li>
           <li>
             <a href="#" class="relative group"
               >Contact
               <span
-                class="absolute left-0 bottom-0 block h-0.5 w-full bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span
+                class="absolute left-0 bottom-0 block h-0.5 w-full bg-black lg:bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span
             ></a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="lg:h-screen lg:flex lg:flex-col">
       <!-- hero section -->
-      <section class="flex flex-col">
+      <section class="flex flex-col lg:flex-row lg:flex-1">
         <!-- hero image -->
-        <div class="relative z-0 w-full overflow-hidden">
+        <div class="relative z-0 w-full overflow-hidden lg:w-[60%]">
           <ul
             id="carousel"
-            class="flex transition-transform duration-500 list-none">
+            class="flex transition-transform duration-500 list-none h-full">
             <li class="min-w-full">
               <picture>
                 <source
-                  srcset="./images/desktop-image-hero-1.jpg"
-                  media="(min-width: 1024px)" />
+                  media="(min-width: 1024px)"
+                  srcset="./images/desktop-image-hero-1.jpg" />
                 <img
                   src="./images/mobile-image-hero-1.jpg"
                   alt="hero image 1"
@@ -129,11 +136,13 @@
         </div>
 
         <!-- hero description -->
-        <div id="hero-description" class="px-9 py-16">
-          <h1 class="font-bold text-4xl">
+        <div
+          id="hero-description"
+          class="px-9 py-16 w-full lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:px-16">
+          <h1 class="font-bold text-4xl leading-tight">
             Discover innovative ways to decorate
           </h1>
-          <p class="text-lg text-gray-500 mt-4 mb-8">
+          <p class="text-lg text-gray-500 mt-4 mb-8 lg:mt-6 lg:mb-10">
             We provide unmatched quality, comfort, and style for property owners
             across the country. Our experts combine form and function in
             bringing your vision to life. Create a room in your own style with
@@ -143,8 +152,8 @@
 
           <div class="group flex items-center space-x-4 cursor-pointer">
             <a
-              href="#"
               class="uppercase text-xl tracking-[0.5em] font-medium group-hover:text-gray-500 transition-colors"
+              href="#"
               >SHOP NOW</a
             >
             <img
@@ -156,21 +165,22 @@
       </section>
 
       <!-- product section -->
-      <section>
+      <section class="flex flex-col lg:flex-row lg:h-[330px]">
         <!-- about image dark -->
-        <div class="w-full">
+        <div class="w-full lg:w-[30%]">
           <img
-            class="w-full"
+            class="w-full h-full object-cover lg:h-[330px]"
             src="./images/image-about-dark.jpg"
             alt="about image" />
         </div>
 
         <!-- about description -->
-        <div class="px-9 py-16">
+        <div
+          class="px-9 py-16 lg:w-[40%] lg:px-12 lg:py-20 lg:flex lg:flex-col lg:justify-center">
           <h2 class="font-bold text-xl tracking-[0.2em]">
             ABOUT OUR FURNITURE
           </h2>
-          <p class="text-lg text-gray-500 mt-4 mb-8">
+          <p class="text-lg text-gray-500 leading-relaxed mt-4">
             Our multifunctional collection blends design and function to suit
             your individual taste. Make each room unique, or pick a cohesive
             theme that best express your interests and what inspires you. Find
@@ -181,23 +191,23 @@
         </div>
 
         <!-- about image light -->
-        <div class="w-full">
+        <div class="w-full lg:w-[30%]">
           <img
-            class="w-full"
+            class="w-full h-full object-cover lg:h-[330px]"
             src="./images/image-about-light.jpg"
             alt="about image" />
         </div>
       </section>
     </main>
 
-    <footer class="mt-10 px-5">
+    <footer class="mt-5 px-5 lg:mt-0">
       <p class="text-[1rem] text-center">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by
         <a
-          class="text-blue-footer"
+          class="text-blue-footer hover:text-blue-200 transition-colors"
           href="https://www.linkedin.com/in/muhammad-fachrezi-barus/"
           >Fachrezi</a
         >.
